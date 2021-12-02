@@ -48,7 +48,8 @@ class App extends Component {
     const index = todos.findIndex(todo => todo.id === id);
     const selected = todos[index]; // 선택한 객체
 
-    const nextTodos = [...todos]; // 배열을 복사 [...todos]?????
+    const nextTodos = [...todos]; // 배열을 복사 
+    // ... <- 전개연산자
 
     nextTodos[index] = {
       ...selected,
